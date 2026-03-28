@@ -5,5 +5,5 @@ public class DataItem
     public string Id { get; set; } = string.Empty;
     public byte[] Payload { get; set; } = Array.Empty<byte>();
 
-    public int GetSize() => Payload.Length;
+    public long GetSize() => Payload.Length;
 }
