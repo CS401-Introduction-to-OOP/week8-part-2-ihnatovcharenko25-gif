@@ -2,10 +2,10 @@
 
 public class PointRef
 {
-    public int X { get; private set; } 
-    public int Y { get; private set; }
+    public int X { get; set; } 
+    public int Y { get; set; }
 
-    public PointRef(int x, int y)
+    public PointRef(int x=0, int y=0)
     {
         X = x;
         Y = y;
