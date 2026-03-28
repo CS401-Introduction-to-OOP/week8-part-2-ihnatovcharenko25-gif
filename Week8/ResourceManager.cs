@@ -18,6 +18,7 @@ public class ResourceManager<T> where T : Resource
     public void CloseAll()
     {
         foreach (var resource in _list)
-            resource.Close();
+            if (resource.IsOpen)
+                resource.Close();
     }
 }
